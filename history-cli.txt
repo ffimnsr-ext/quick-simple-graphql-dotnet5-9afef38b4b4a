@@ -1,0 +1,9 @@
+dotnet new web -f net5.0 --no-https --name GqlNet5Demo
+cd graphql-net5-demo
+dotnet add package GraphQL.Server.Transports.AspNetCore
+dotnet add package GraphQL.Server.Transports.AspNetCore.SystemTextJson
+dotnet add package GraphQL.Server.Transports.WebSockets
+dotnet add package GraphQL.Server.Ui.Playground
+
+Why migrate to SystemTextJson from NewtonsoftJson
+https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to?pivots=dotnet-5-0
